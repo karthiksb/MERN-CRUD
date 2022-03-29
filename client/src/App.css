@@ -1,0 +1,51 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(162, 77%, 40%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 59%);
+}
+.inputfield form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  color: #fff;
+  padding: 100px;
+  height: fit-content;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+label {
+  margin-bottom: 10px;
+}
+input {
+  margin-bottom: 4px;
+  background-color: rgb(60, 75, 59);
+  border-style: none;
+  height: 40px;
+  width: 300px;
+  color: #fff;
+  padding-left: 30px;
+}
+button {
+  margin-top: 20px;
+  background-color: rgb(12, 99, 89);
+  color: #fff;
+  transition: transform 0.2s;
+  border-style: none;
+  height: 60px;
+}
+button:hover {
+  transform: scale(1.1);
+}
